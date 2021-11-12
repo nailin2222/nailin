@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Healthy food</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">  
+</head>
+<body>
+    <td>Contact</td>
+    <form id="mi_contacto" method="POST" action="php/contacto.php" class="container need-validation" novalidate>
+        <div class="from-group">
+            <label for="nombre">Nombre:</label>
+            <input type="nombre" name="nombre" id="nombre" maxlength="45" required class="from-control" placeholder="Ingresá tu nombre queride">
+            <div class="invalid-feedback">
+                Ingresa tu nombre queride.
+            </div>
+        </div>
+        <div class="from-group">
+            <label for="apellido">Apellido:</label>
+            <input type="apellido" name="apellido" id="apellido" maxlength="45" required class="from-control" placeholder="Ingresá tu apellido queride">
+            <div class="invalid-feedback">
+                Ingresa tu apellido queride.
+            </div>
+        </div>
+        <div class="from-group">
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email1" maxlength="45" required class="from-control" placeholder="Ingresá tu email queride">
+            <div class="invalid-feedback">
+                Ingresa tu email valido queride.
+            </div>
+        </div>
+        <div class="from-group">
+            <label for="email">Reingrese su email:</label>
+            <input type="email" name="email1" id="email2" maxlength="45" required class="from-control" placeholder="Ingresá tu email queride">
+            <div class="invalid-feedback">
+                Tu email no coincide queride.
+            </div>
+        </div>
+        <div class="from-group">
+            <label for="asunto">Asunto:</label>
+            <input type="asunto" name="asunto" id="asunto" maxlength="45" required class="from-control" placeholder="Asunto">
+            <div class="invalid-feedback">
+                Ingrese el asunto. No más de 45 caracteres.
+            </div>
+        </div>
+        <div class="from-group">
+            <label for="mensaje">Mensaje:</label>
+            <textarea name="mensaje" class="from-control" maxlength="255" required cols="30" rows="5"></textarea>
+        </div>
+        <input type="submit" value="Enviar">
+    </form>
+    <script src="js/bootstrap.bundle.js"></script>
+</body>
+</html>

@@ -12,4 +12,5 @@ $instruccion_sql = "INSERT INTO contacto (nombre, apellido, email, asunto) value
 $result = $con->prepare($instruccion_sql);
 $result->execute();
 
-echo "Los datos del usuario {$nombre},{$apellido} fueron procesados satisfactoriamente"
+echo "Los datos del usuario {$nombre},{$apellido} fueron procesados satisfactoriamente";
+?>
